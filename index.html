@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>Carbon Footprint Calculator</title>
+     <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>🍃 Carbon Footprint Calculator 🌿</h1>
+        <form id="footprintForm">
+            <div class="question">
+            <label>🚗 How often do you drive?</label><br/>
+            <select name="drive" required>
+                <option value="">Select</option>
+                <option value="3">Daily</option>
+                <option value="2">Few Times a week</option>
+                <option value="1">Rarely</option>
+                <option value="0">Never</option>
+            </select>
+            </div>
+           
+            <div class="question">
+            <label>✈️ How many flights do you usually take each year?</label><br/>
+            <select name="flights" required>
+                <option value="">Select</option>
+                <option value="3">More than 5 flights</option>
+                <option value="2">3-5 flights</option>
+                <option value="1">1-2 flights</option>
+                <option value="0">None/0 flights </option>
+            </select>
+            </div>
+
+            <div class="question">
+            <label>♻️ Do you recycle regularly?</label><br/>
+            <select name="recycle" required>
+                <option value="">Select</option>
+                <option value="2">No</option>
+                <option value="1">Sometimes</option>
+                <option value="0">Yes</option>
+            </select>
+            </div>
+           
+            <div class="question">
+            <label>☀️ Do you use renewable energy at home? (Example: Using Solar Panels)</label><br/>
+            <select name="renewable" required>
+                <option value="">Select</option>
+                <option value="2">No, not at all</option>
+                <option value="1">Partly</option>
+                <option value="0">Yes, Of course</option>
+            </select>
+            </div>
+
+            <div class="question">
+            <label>👕 How often do you buy new clothes?</label><br/>
+            <select name="clothes" required>
+                <option value="">Select</option>
+                <option value="3">Monthly</option>
+                <option value="2">Every 2-3 Months</option>
+                <option value="1">Once or Twice a year</option>
+                <option value="0">Rarely</option>
+            </select>
+            </div>
+
+            <div class="question">
+            <label>🗑️ Do you compost your food  waste?</label><br/>
+            <select name="compost" required>
+                <option value="">Select</option>
+                <option value="2">No</option>
+                <option value="1">Sometimes</option>
+                <option value="0">Yes</option>
+            </select>
+            </div>
+
+            <div class="question">
+            <label>🚇 How do you commute to School/Work?</label><br/>
+            <select name="commute" required>
+                <option value="">Select</option>
+                <option value="2">Car (Personal Vehicle)</option>
+                <option value="1">Trains/Buses (Public Transport)</option>
+                <option value="0">Walk/Cycle</option>
+            </select>
+            </div>
+
+            <div class="question">
+            <label>🚿 How long do you shower?</label><br/>
+            <select name="shower" required>
+                <option value="">Select</option>
+                <option value="0">5 minutes or less</option>
+                <option value="1">6-10 minutes</option>
+                <option value="2">10-20 minutes</option>
+                <option value="3">I live in the shower</option>
+                </select>
+            </div>
+            <button type="submit">Calculate My Footprint</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
